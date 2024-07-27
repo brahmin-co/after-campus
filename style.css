@@ -153,6 +153,15 @@ button.white{
     font-weight: 700;
     font-size: 15px;
 }
+#hero button a{
+    text-decoration: none;
+    color: #088178;
+}
+#hero button a:hover{
+    color: #000;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
 
 #feature{
     display: flex;
@@ -753,6 +762,9 @@ footer .copyright{
 }
 
 /*Cart Page*/
+#cart{
+    overflow-x: auto;
+}
 #cart table{
     width: 100%;
     border-collapse: collapse;
@@ -797,6 +809,52 @@ footer .copyright{
 }
 #cart table tbody tr td{
     padding-top: 15px;
+}
+#cart table tbody td{
+    font-size: 13px;
+}
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#coupon {
+    width: 50%;
+    margin-bottom: 30px;
+}
+#coupon h3,
+#subtotal h3{
+    padding-bottom: 15px;
+}
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+#coupon button,
+#subtotal button{
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+}
+#subtotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#subtotal table td{
+    width: 50px;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
 }
 
 
@@ -1005,5 +1063,16 @@ footer .copyright{
     #form-details {
         margin: 20px;
         padding: 30px 10px;
+    }
+    /*cart page*/
+    #cart-add {
+        flex-direction: column;
+    }
+    #coupon {
+        width: 100%;
+    }
+    #subtotal {
+        width: 100%;;
+        padding: 20px;
     }
 }
